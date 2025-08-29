@@ -1,14 +1,359 @@
 [
   {
+    "id": 1,
     "section": "2024_kuz",
     "question": "Mayl, havas, ichki qiziqish – bir shaxsning ikkinchi shaxsga, muayyan subyektlar guruhiga yoki qandaydir ijtimoiy hodisaga nisbatan ijobiy hissiy munosabati",
     "options": ["antipatiya", "Simpatiy", "Empatiya", "bilmayman"],
     "answer": "b"
   },
   {
+    "id": 2,
     "section": "2024_kuz",
     "question": "Hamdardlik, qayg'udosh bo'lish – bir shaxsning u tomonidan ikkinchi shaxsning fikrlari, xohish-istaklari, qiziqishlari, intilishlarining his etilishi, tushunilishi, qabul qilinishini ifodalovchi munosabati",
     "options": ["antipatiya", "Simpatiy", "Empatiya", "bilmayman"],
     "answer": "c"
+  },
+  {
+    "id": 3,
+    "section": "2024_kuz",
+    "question": "Yoqtirmaslik, xush ko‘rmaslik– bir shaxsning ikkinchi shaxsga, muayyan subyektlar  guruhiga yoki qandaydir ijtimoiy hodisaga nisbatan salbiy hissiy munosabati ifodasidir.",
+    "options": ["antipatiya", "Simpatiy", "Empatiya", "bilmayman"],
+    "answer": "a"
+  },
+  {
+    "id": 4,
+    "section": "2024_kuz",
+    "question": "Moslashtiring    1. Didaktik tahlil   2. Pedagogik tahlil     A) O‘qituvchining tashqi qiyofasi, o‘quvchilar bilan til topa olish mahorati, madaniyati, odobi bilan birgalikda dars jarayonida umuminsoniy tarbiyaning tarkibiy qismlarini o'quvchilarga bera olishi va uning nutq madaniyati kuzatiladi  B) Mavzuning ilmiyligi va izchilligi , oddiydan murakkabga tomon yo'nalishi, ko'rgazmaliligi va berilayotgan bilim, yangi axborotlarning hayotiyligi, ularning jonli va ravon tilda ochib berilsihi kuzatiladi.     C) O‘quvchilarning kayfiyati, ularning salomatligini, jamoada o‘zini tutish qoidalariga asoslangan, va tengdoshlari orasida do‘stona va o‘zaro hurmatli munosabatlar kuzatiladi.",
+    "options": ["1-B 2-A", "1-A 2-A", "1-A 2-B", "bilmayman"],
+    "answer": "a"
+  },
+  {
+    "id": 5,
+    "section": "2024_kuz",
+    "question": "Yosh o'qituvchi kasbiy mahoratining asosiy tashkil etuvchi komponentlarini aniqlang! 1.o 'z kasbini sidqidildan sevishi;    2.o'z fanini va uni o'qitish metodikasini mukammal bilishi;    3.pedagogik qobiliyatlarini namoyish eta olishi;    4.pedagogik texnikani mukammal bilishi, notiqlik san’atim o'z o'rnida qo'Ilay olishi. ",
+    "options": ["1,2", "2,3", "1,2,3", "barchasi"],
+    "answer": "d"
+  },
+  {
+    "id": 6,
+    "section": "2024_kuz",
+    "question": "O’qituvchi dars davomida o’quvchilarga o’tilgan mavzular yuzasidan savollar berdi. So’ng o’quvchilar olgan bilimlarni qo’llash maqsadida kichik guruhlarda amaliy topshiriq bajardilar. Dars yakunida o’rganilgan mavzu yuzasidan o’z xulosalarini taqdimot qildilar. Shunda o’qituvchi qaysi dars turidan foydalandi? ",
+    "options": ["Yangi bilimlarni bayon qilish darsi", "O’rganilganlarni takrorlash va mustahkamlash darsi", "Aralash dars", "barchasi"],
+    "answer": "b"
+  },
+  {
+    "id": 7,
+    "section": "2024_kuz",
+    "question": "O'qituvchi  yangi mavzuni tushuntirish uchun asos bo'lgan avvalgi   materiallarni 'Aqliy hujum' orqali takrorlab oldi. So'ng tanish ma'lumotlarga yangi mavzuni ulab, darslikda berilgan matn ustida o'quvchilar bilan hamkorlikda ishladi. Keyin yangi mavzu bo'yicha olingan bilimlarni tekshirib, mustahkamladi. Shunda o'qituvchi qaysi dars turidan foydalandi? ",
+    "options": ["yangi bilimlarni bayon qilish darsi ", "O’rganilganlarni takrorlash va mustahkamlash darsi", "Aralash dars", "barchasi"],
+    "answer": "a"
+  },
+   {
+    "id": 8,
+    "section": "2024_kuz",
+    "question": "O'qituvchi  yangi mavzuni tushuntirish uchun asos bo'lgan avvalgi   materiallarni 'Aqliy hujum' orqali takrorlab oldi. So'ng tanish ma'lumotlarga yangi mavzuni ulab, darslikda berilgan matn ustida o'quvchilar bilan hamkorlikda ishladi. Keyin yangi mavzu bo'yicha olingan bilimlarni tekshirib, mustahkamladi. Shunda o'qituvchi qaysi dars turidan foydalandi? ",
+    "options": ["yangi bilimlarni bayon qilish darsi ", "O’rganilganlarni takrorlash va mustahkamlash darsi", "Aralash dars", "barchasi"],
+    "answer": "b"
+  },
+   {
+    "id": 9,
+    "section": "2024_kuz",
+    "question": "Pedagogik   qobiliyatning   asosiy   sifatlari    1. O'z kasbiga muhabbat, o'quvchilarni seva olishi.    2. Mutaxassislik fanini mukammal bilishi, unga qiziqishi.    3. Pedagogik taktga (odob va go'zallikka) ega bo'lish.    4. Bolalar jamoasiga singib keta olish.    5. O'z mehnatiga ijodiy yondashish.    6. Javobgarlikni his etish.    7. Tarbiyaviy bilimlarni egallaganligi.    ",
+    "options": ["1,4,7,6", "1,2,3,4,7", "1,2,3,4,6", "barchasi"],
+    "answer": "d"
+  },
+   {
+    "id": 10,
+    "section": "2024_kuz",
+    "question": "Qaysi darsining tuzilishi?   qaysilar? ",
+    "options": ["tashkiliy qism", "o‘rganilganlarni umumiy tarzda takrorlash (yodga tushirish);  ", "nazorat ishini o‘tkazish", "O‘quvchilarning bilim, ko‘nikma va malakalarini nazorat qilish darsi"],
+    "answer": "d"
+  },
+   {
+    "id": 11,
+    "section": "2024_kuz",
+    "question": "Har bir o'quvchisi nimaga qodir ekanligini bilgan ustoz navbatdagi tadbirga  tayyorgarlik vaqtida umuman qiynalmadi. U o'quvchilarning bilimi va mahoratiga mos rollar ajratib vazifalarni belgilab berdi.Tadbirga o'quvchilar mustaqil tayyorgarlik ko'rib, uni ko'tarinki ruhda o'tkazdi. Tadbirdan o'quvchilarning o'zlari ota-onalar maktab rahbariyati ham mamnun bo'ldi. Bunday holatda o'qituvchining qanday qobilyati namoyon bo'ldi.",
+    "options": ["O'quv jarayonini rejatashtirish ", "Voqealarni oldindan ko'ra bilish qobiliyati ", "nazorat ishini o‘tkazish", "suhbat metodi  "],
+    "answer": "b"
+  },
+   {
+    "id": 12,
+    "section": "2024_kuz",
+    "question": "Dars vaqtini oqilona tashkillashtirish, darsning maqsad, shakl va usullarini aniqlash” o'qituvchilar kasbiy kompetensiyasining qaysi mehnat vazifasidagi ko'nikmalariga kiradi? ",
+    "options":["O'quv jarayonini rejatashtirish ", "Voqealarni oldindan ko'ra bilish qobiliyati ", "nazorat ishini o‘tkazish", "suhbat metodi  "],
+    "answer": "a"
+  },
+   {
+    "id": 13,
+    "section": "2024_kuz",
+    "question": "O`qituvchi bu tadqiqot usuli orqali ma'lumotlarni boyitish, mavjud holatga to`g`ri baho berish, muammoning yechimini topishga imkon beruvchi pedagogik shart-sharoitlarni yaratish, tajriba-sinov ishlari subyektlari imkoniyatlarini muammo yechimiga jalb etishga yordam beradi. Tadqiqot samarali bo`lishi uchun suhbatdoshning o`z fikrlarini erkin va batafsil ayta olishi uchun sharoit yaratish hamda olingan bilimlarni o`z vaqtida tahlil qila olishi lozim.Shunda pedagog tadqiqotlar olib borishning qaysi metodidan foydalanadi?   ",
+    "options": ["O'quv jarayonini rejatashtirish ", "Voqealarni oldindan ko'ra bilish qobiliyati ", "nazorat ishini o‘tkazish", "suhbat metodi  "],
+    "answer": "d"
+  },
+   {
+    "id": 14,
+    "section": "2024_kuz",
+    "question": "Muammoni boshqa hodisalar bilan o’zaro aloqadorlikda idrok etish qobiliyati bu?",
+    "options": ["suhbat metodi", "Originallik  ", "Aqliy teranlik", "Chuqur idrok etish qobiliyati "],
+    "answer": "c"
+  },
+   {
+    "id": 15,
+    "section": "2024_kuz",
+    "question": "Muammolarni hal qilish tezligi, kasbgab oid g’oyalarni ishlab chiqarish  qobiliyati bu… ",
+    "options": ["Originallik", "Chuqur idrok etish  ", "Tezlik", "O‘quvchilarning bilim, ko‘nikma va malakalarini nazorat qilish"],
+    "answer": "c"
+  },
+   {
+    "id": 16,
+    "section": "2024_kuz",
+    "question": "Yangi ilmiy g’oyalarni yaratishga bo’lgan intilish bu ….",
+    "options": ["Originallik", "Chuqur idrok etish  ", "Tezlik", "O‘quvchilarning bilim, ko‘nikma va malakalarini nazorat qilish"],
+    "answer": "a"
+  },
+   {
+    "id": 17,
+    "section": "2024_kuz",
+    "question": "Yangi bilimlarni o’zlashtirishda narsalar va hodisalar mohiyatiga chuqur kira  bilish, sababini tushunish,ilmiy tafakkurga ega bo’lish qonuniyatlari bu….",
+    "options": ["Originallik", "Chuqur idrok etish  ", "Tezlik", "O‘quvchilarning bilim, ko‘nikma va malakalarini nazorat qilish"],
+    "answer": "b"
+  },
+   {
+    "id": 18,
+    "section": "2024_kuz",
+    "question": "Case study texnologiyasining asosiy vazifalari nimalardan iborat?    1.tahlil ko‘nikmalari va tanqidiy tafakkurni rivojlantirish.    2.nazariya va amaliyot birligini ta’minlash.    3.muammo yuzasidan turli qarashlar va yondashuvlarni namoyish qilish.                4.qarorlar qabul qilish va uning oqibatlariga doir mulohazalarni taqdim etish.    5.noaniqliklar  mavjud  bo‘lgan  sharoitda  muqobil  variantlarni    ko‘nikmalarini shakllantirish     ",
+    "options": ["1,2,4,5", "1,2,3 ", "1,5", "barchasi"],
+    "answer": "d"
+  },
+   {
+    "id": 19,
+    "section": "2024_kuz",
+    "question": "Moslikni toping    1. O‘z-o‘zini rivojlantirish va kasbiy o‘sish    2. Hamkasblar va ta'lim oluvchilarning ota- onalari bilan hamkorlik.     \baholash   A) Turli xil muhitda har xil emosional holatlardagi odamlar bilan aloqa qila bilish B) Davlat ta'lim standartlari va o'quv dasturlarining maqsadlariga muvofiq o'quvrejalarini ishlab chiqish    Muallif:YuldashaliyevXusniddin  guruh manzili: @Attestatsiya_Ped_Mahorat C) O'zaro darslarda qatnashadi, ularni tahlil qiladi, undan o'zining kasbiy faoliyatida \foydalana ",
+    "options": ["1c 2b", "1c 2a ", "1b 2c", "bilmayman"],
+    "answer": "b"
+  },
+   {
+    "id": 20,
+    "section": "2024_kuz",
+    "question": "Moslashtiring.   1) Onlayn ta'lim   2) Muammoli ta'lim   A) Texnika vositalaridan foydalanish orqali bilim va malakalarni egallash shakli.Bu kompyuter yoki mobil qurilma orqali o'qishdir.   BO'quvchi ilmiy qarama-qarshiliklarga duch keladigan va ularni mustaqilravishda hal qilishga harakat qiladigan o'rganish usuli.   C) Ta'lim nazariyasining o'quv faoliyatining kattalar subyekti tomonidan bilim vko'nikmalarni o'zlashtirishning o'ziga xos tomonlarini ochib beradigan bo'lim.  ",
+    "options": ["1c 2b", "1c 2a ", "1b 2c", "1a 2b"],
+    "answer": "d"
+  },
+  {
+    "id": 21,
+    "section": "2024_bahor",
+    "question": "Debat bu? ",
+    "options": ["muayyan mavzu yoki muammoli vaziyatga turli nuqtai nazarlar bilan yondashish va o'zi fikrini omma oldida himoya qilishga orgatadi", " muayyan tajriba yoki sinovdan so'ng o'z hissiy kechinmalari va intellektual zahiraari bilan almashinishdan iborat bo'ladi ", "muayyan mavzu, vaziyat yoki holatni muhokama qilsh", "Muayyan jarayaon yoki qurilmani sihlash va faoliyat yuritishni ko'rsatish ya'ni namoyish qilshdir"],
+    "answer": "a"
+  },
+  {
+    "id": 22,
+    "section": "2024_bahor",
+    "question": "Debrifing bu? ",
+    "options": ["muayyan mavzu yoki muammoli vaziyatga turli nuqtai nazarlar bilan yondashish va o'zi fikrini omma oldida himoya qilishga orgatadi", " muayyan tajriba yoki sinovdan so'ng o'z hissiy kechinmalari va intellektual zahiraari bilan almashinishdan iborat bo'ladi ", "muayyan mavzu, vaziyat yoki holatni muhokama qilsh", "Muayyan jarayaon yoki qurilmani sihlash va faoliyat yuritishni ko'rsatish ya'ni namoyish qilshdir"],
+    "answer": "b"
+  },
+  {
+    "id": 23,
+    "section": "2024_bahor",
+    "question": "Diskassiya bu? ",
+    "options": ["muayyan mavzu yoki muammoli vaziyatga turli nuqtai nazarlar bilan yondashish va o'zi fikrini omma oldida himoya qilishga orgatadi", " muayyan tajriba yoki sinovdan so'ng o'z hissiy kechinmalari va intellektual zahiraari bilan almashinishdan iborat bo'ladi ", "muayyan mavzu, vaziyat yoki holatni muhokama qilsh", "Muayyan jarayaon yoki qurilmani sihlash va faoliyat yuritishni ko'rsatish ya'ni namoyish qilshdir"],
+    "answer": "c"
+  },
+  {
+    "id": 24,
+    "section": "2024_bahor",
+    "question": "Demonstratsiya bu? ",
+    "options": ["muayyan mavzu yoki muammoli vaziyatga turli nuqtai nazarlar bilan yondashish va o'zi fikrini omma oldida himoya qilishga orgatadi", " muayyan tajriba yoki sinovdan so'ng o'z hissiy kechinmalari va intellektual zahiraari bilan almashinishdan iborat bo'ladi ", "muayyan mavzu, vaziyat yoki holatni muhokama qilsh", "Muayyan jarayaon yoki qurilmani sihlash va faoliyat yuritishni ko'rsatish ya'ni namoyish qilshdir"],
+    "answer": "d"
+  },
+  {
+    "id": 25,
+    "section": "2024_bahor",
+    "question": "....... – pedagogik muloqotda o‘qituvchining e’tiborsizligini ifodalovchi uslub ",
+    "options": ["Pedagogik muloqotning liberal uslub", "yangi bilimlarni namoyish qilish ", "muayyan mavzu, vaziyat yoki holatni muhokama qilsh", "Muayyan jarayaon yoki qurilmani sihlash va faoliyat yuritishni ko'rsatish ya'ni namoyish qilshdir"],
+    "answer": "a"
+  },
+  {
+    "id": 26,
+    "section": "2024_bahor",
+    "question": "Pedagogik faoliyat bilan shug’ullanishga yo’l qo’yilmaydigan shaxslarni aniqlang 1. Belgilangan ro’yxat bo‘yicha kasalliklarga chalinganlar2. Sud hukmiga muvofiq pedagogik faoliyat bilan shug’ullanishtaqiqlangan shaxslar.3. Sud hukmi bilan Muomalaga layoqatsiz deb topilganlar4. Tarkibi va turlari O’zbekiston Respublikasi qonun hujjatlaridabelgilangan jinoyatlar uchunavval yoki hozir Jinoiy javobgarlikkatortilganla",
+    "options": ["1,2", "1,3 ", "1,2,3", "barchasi"],
+    "answer": "d"
+  },
+  {
+    "id": 26,
+    "section": "2024_bahor",
+    "question": "...- shaxsning ongida tushunchalar, umumlashmalar, ma’lum obrazlar ko‘rinishida aks etuvchi borliq haqidagi tizimlashtirilgan ilmiy ma’lumotlar majmu",
+    "options": ["Ko'nikma", "Bilim", "voqealarni oldindan ko'ra olish", "barchasi"],
+    "answer": "b"
+  },
+  {
+    "id": 27,
+    "section": "2024_bahor",
+    "question": "O'qituvchi kim nimaga qodir ekanini oldindan bashorat qilishga yordam beradigan qobiliyat turini aniqlang?",
+    "options": ["Ko'nikma", "Bilim", "voqealarni oldindan ko'ra olish", "barchasi"],
+    "answer": "c"
+  },
+  {
+    "id": 28,
+    "section": "2024_bahor",
+    "question": "..mutaxassisning maxsus tayyorlangan faoliyati bo‘lib, tarbiyachining kasbiy onggi va ijtimoiy buyurtmadan kelib chiqadigan maqsad va vazifalardan aniqlanad",
+    "options": ["Pedagogik faoliya", "muloqot qilish", "Синтезлаш", "barchasi"],
+    "answer": "a"
+  },
+  {
+    "id": 29,
+    "section": "2024_bahor",
+    "question": "O'qituvchini o'quvchilar bilan dars va darsdan tashqari jarayonlarda ijobiy muhit yarata olishi qaysi qobiliyat turiga mansub",
+    "options": ["Pedagogik faoliya", "muloqot qilish", "Синтезлаш", "barchasi"],
+    "answer": "b"
+  },
+  {
+    "id": 30,
+    "section": "2024_bahor",
+    "question": ".... ушбу қонуниятларга амал қилган ҳол “тингловчиларга ҳаловат бағишлаш” орқали одамларни эзгуликка, адолатпарварликка, ватан олдидаги бурчларига садоқатли бўлишга, энг яхши инсоний фазилатларга амал қилиб, уларни бажаришга, одоб ва ахлоқ қоидаларига риоя қилишга чорлар эдилар. Бу уларнинг асосий вазифаси ҳисобланарди",
+    "options": ["Aralash", "Bilim", "voqealarni oldindan ko'ra olish", "notiqlar"],
+    "answer": "d"
+  },
+  {
+    "id": 31,
+    "section": "2024_bahor",
+    "question": "Kombinatsion dars turi qaysi?",
+    "options": ["Aralash", "Bilim", "voqealarni oldindan ko'ra olish", "notiqlar"],
+    "answer": "a"
+  },
+  {
+    "id": 32,
+    "section": "2024_bahor",
+    "question": "Мавжуд билимга таяниб, таркибий элементлар асосида бир бутун объект тўғрисида умумий хулоса чиқариш bu",
+    "options": ["Pedagogik faoliya", "muloqot qilish", "Синтезлаш", "barchasi"],
+    "answer": "c"
+  },
+  {
+    "id": 33,
+    "section": "2024_bahor",
+    "question": "Мавжуд билимга таяниб, бир бутун объектни таркибий элементларга ажратган ҳолда ўрганиш, жузъий хулоса чиқариш bu",
+    "options": ["Ko'nikma", "Таҳлил қилиш", "voqealarni oldindan ko'ra olish", "barchasi"],
+    "answer": "b"
+  },
+  {
+    "id": 34,
+    "section": "2024_bahor",
+    "question": "Pedagogik muloqot uslublari to’g’ri keltirilgan qatorni toping",
+    "options": ["Avtoritar, Liberal, Demokratik", "Liberal, Demokratik", "voqealarni oldindan ko'ra olish", "barchasi"],
+    "answer": "a"
+  },
+  {
+    "id": 35,
+    "section": "2024_bahor",
+    "question": "Bolalarga bo'lgan nmhabbatdan kelib chiqadigan o'quvchilarning his-tuyg'usini, psixologik holatlarini qalbdan his etish, tushunish, idrok etish, ularga achinish xususiyatlarini aks ettiruvchi qobiliyat bu ...",
+    "options": ["Empatik qobiliyat", "Shaxsiy refleksiya", "voqealarni oldindan ko'ra olish", "barchasi"],
+    "answer": "a"
+  },
+  {
+    "id": 36,
+    "section": "2024_bahor",
+    "question": "Ota-onalar yig’ilishida o’qituvchi bir onaga bolasi ustidan shikoyat qildi, natijada ota-ona va o’qituvchi o’rtasida janjal kelib chiqdi. Jahli chiqqan ota-ona farzandini boshqa maktabga olib ketdi. O’qituvchi xato qilgan tushundi. Mazkur holatda o’qituvchida qanday refleksiya turi shakllanmagan?",
+    "options": ["Empatik qobiliyat", "Shaxsiy refleksiya", "voqealarni oldindan ko'ra olish", "barchasi"],
+    "answer": "b"
+  },
+  {
+    "id": 37,
+    "section": "2024_bahor",
+    "question": "O'qituvchi darsda bir o'quvchining topshiriqni tezda bajarib unga sezdirmasdan rasm chizib o'tirganini ko'rdi. Fan o'qituvchisi darsdan so'ng uni tasviriy san'at o'qituvchisining oldiga olib borib shu o'quvchining qiziqishlari haqida gaplashdi. Yakunda o'quvchi tasviriy san'at to'garagiga yozildi. Mazkur holatda O'qituvchining qanday qobiliyati namoyon bo'lgan",
+    "options": ["Ko'nikma", "Bilim", "voqealarni oldindan ko'ra olish qobiliyati", "barchasi"],
+    "answer": "c"
+  },
+  {
+    "id": 38,
+    "section": "2024_bahor",
+    "question": "Taʼlim vositalari bu – .....",
+    "options": ["o’qitish samaradorligini taʼminlovchi darslik,qo’llanma,xarita, o’quv qurollari kabi obyektiv omillar o’qitish samaradorligini taʼminlovchi diagramma, plakat, rayem, chizma, proyekto", "o’qitish samaradorligini taʼminlovchi diagramma, plakat, rayem, chizma, proyektor, magnitafon, video magnitafon, uskuna, televizor, radio,kompyuter kabi obyektiv omilla", "bilmadim", "barchasi"],
+    "answer": "d"
+  },
+  {
+    "id": 39,
+    "section": "2024_bahor",
+    "question": "O'qituvchining pedagogik jarayonda sog'lom muhitni yarata olishi, o'quvchilar va ta'lim jarayonining boshqa ishtirokchilari bilan ijobiy muloqotni tashkil etishi, turli ziddiyatlarni o'z vaqtida anglay olishi va bartaraf etishi qaysi kasbiy kompetensiyada namoyon bo'ladi?",
+    "options": ["Ko'nikma", "Monolog", "Psixologik", "barchasi"],
+    "answer": "c"
+  },
+  {
+    "id": 40,
+    "section": "2024_bahor",
+    "question": "O'qituvchi o'quvchilarga yangi mavzuni ma'ruza tarzida tushuntirib. Dars davomida o'qituvchi faol bo'lib, o'quvchilarga qaratilgannutq so'zladi. Bunda o'qituvchi faoliyatida kuzatiladigan nutqningqanday shakli namoyon bo'ld",
+    "options": ["Ko'nikma", "Monolog", "Psixologik", "barchasi"],
+    "answer": "b"
+  },
+  {
+    "id": 41,
+    "section": "2025_15_20_aprel",
+    "question": "O‘z ustida ko‘p ishlaydigan boshlang‘ich sinf o‘qituvchisi bir xillikdan zerikib, har bir dars uchun texnologik xarita tuzdi va darslarini xilma-xil o‘tishini ta’minladi. Ushbu vaziyatda pedagogik texnologiyaning qaysi darajasi namoyon bo‘lmoqda? ",
+    "options": ["Makro daraja", "Mikro daraja", "Mezo daraja", "a va B"],
+    "answer": "c"
+  },
+  {
+    "id": 42,
+    "section": "2025_15_20_aprel",
+    "question": "O'qituvchi yangi mavzuni o'tdi shundan so'ng bilimlarni mustahkamlash maqsadida bolalar bilan savol-javob o'tkazdi. Bunday holatda o'qituvchi qaysi an'anaviy ta'lim metodidan foydalandi?",
+    "options": ["tushuntirish", "tasvir", "Psixologik", "suhbat  metodi"],
+    "answer": "d"
+  },
+  {
+    "id": 43,
+    "section": "2025_15_20_aprel",
+    "question": "Maktabning beshinchi sinf o'quvchilari matematika fanidan juda aqlli va bilimdon, chunki ular ko'p vaqt tayyorlov kurslaiga borishgan. O'qituvchi darsga kirishdan oldin uning texnalogik modeli va xaritasini tuzib kirishi kerak. Aks xolda o'quvchilar o'qituvchi bilimsiz deyishlari mumkin. Ushbu vaziyatda pedagogik texnalogiyaning qaysi darajasi namoyon bo'lmoqda?",
+    "options": ["Umumpedagogik daraja", "Xususiy metodik daraja", "Quyi daraja", "Lokal daraja"],
+    "answer": "b"
+  },
+  {
+    "id": 44,
+    "section": "2025_15_20_aprel",
+    "question": "4K modelini nimalar tashkil qiladi?  1.Kreativ 2.Kritik 3.Kombinaterika 4.Komminikatsiya 5.Kooperatsiya 6.Kollaboratsiya",
+    "options": ["2,3,5,6", "1,2,4,6", "1,3,5,6", "1,2,5,6"],
+    "answer": "b"
+  },
+  {
+    "id": 45,
+    "section": "2025_15_20_aprel",
+    "question": "Qaysi xalqaro dastur 3 yilda bir marta o‘tkazilib, o‘quvchilarning o‘qish, matematika va tabiiy fanlar bo‘yicha bilim sifati 1000 ballik tizimda baholanadi?",
+    "options": ["PISA", "PIRLS", "TIMSS", "TALIS"],
+    "answer": "a"
+  },
+  {
+    "id": 46,
+    "section": "2025_15_20_aprel",
+    "question": "4K modelini nimalar tashkil qiladi? Ketma-ketlikda berilgan javobni belgilang. 1.Kreativ       2Kritik            3Kombinatorika       4Kommunikatsiya 5Kollaboratsiya                6Kooperatsiya",
+    "options": ["5, 4, 1, 2", "6,4,3,2", "5,4,1,6", "3,5,6"],
+    "answer": "a"
+  },
+  {
+    "id": 47,
+    "section": "2025_15_20_aprel",
+    "question": "Moslashtiring. Tarbiyaviy faoliyatni tashkil etish A) Taʼlimning aniq va o‘lchanadigan natijalarini, shuningdek, ushbu natijalarga erishishda aniq muddatlar uchun vazifalarni aniqlash va ularni rejalarda shakllantirish B) O‘quvchilarni taʼlim va tarbiya jarayoniga jalb qilish, ularning o‘quv va bilim faoliyatiga qiziqtirish maqsadida o‘quv guruhlarini boshqarish C) Turli madaniyatdagi bolalar, o‘spirinlar bilan ishlashga imkon beradigan madaniyatlararo kompetensiyalarga ega bo‘lis ",
+    "options": ["1-A, 2-C", "1-B, 2-A", "1-A 2-B", "1-B 2-C"],
+    "answer": "d"
+  },
+  {
+    "id": 48,
+    "section": "2025_15_20_aprel",
+    "question": "Moslashtring 1.Kimyo fani o‘qituvchisi darsda o‘quvchilarni kundalik baholab boradi 2.Biologiya o‘qituvchisi o‘quv yili boshida o‘quvchilar bilimini o‘rganish uchun ularni baholab oladi 3.Fizika fani o‘qituvchisi o‘quvchilarni semestr tugaganida baholadi A)Diagnostik B)Formativ C)Summativ",
+    "options": ["1-b, 2-a, 3-c", "1-c, 2-b, 3-a", "1-a, 2-c, 3-b", "barchasi"],
+    "answer": "a"
+  },
+  {
+    "id": 49,
+    "section": "2025_15_20_aprel",
+    "question": "Dars mavzusiga mos keladigan namoyish va tarqatma materiallardan foydalanish o’qituvchilar kasbiy kompetensiyasining qaysi mehnat vazifasiga mansub harakatlar hisoblanadi?",
+    "options": ["Ta’lim va tarbiya jarayonini boshqarish", "O’zlashtirishni baholash va qayta aloqani taqdim taqdim etish", "Ta’lim samaradorligini taminlash ", "O’quv jarayonini rejalashtirish va tashkillashtirish"],
+    "answer": "c"
+  },
+  {
+    "id": 50,
+    "section": "2025_15_20_aprel",
+    "question": "1.Rivojlanuvchi ta'lim 2.Muammoli Ta'lim 3.Dasturlashtrilgan ta'lim A)O‘quvchilarga murakkab vazifalar orqali bilim beriladi; analitik fikrlash rivojlanadi. B)O‘quvchilarning mustaqil fikrlashi, yangi g‘oyalar yaratishi, faol ishtirokchi bo‘lishi ta'minlanadi C)Ta’lim bosqichma-bosqich, reja asosida tizimli tarzda olib boriladi.",
+    "options": ["1-b, 2-a, 3-c", "1-a, 2-c, 3-b", "1-c, 2-b, 3-a", "1-b, 2-c, 3-a"],
+    "answer": "a"
   }
 ]
