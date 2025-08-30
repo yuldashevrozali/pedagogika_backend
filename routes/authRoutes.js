@@ -26,7 +26,6 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-// 📌 SIGN IN (2 token)
 router.post("/signin", async (req, res) => {
   try {
     const { email, password } = req.body;
