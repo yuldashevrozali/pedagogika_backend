@@ -60,41 +60,35 @@ app.post("/api/users/signup", async (req, res) => {
 });
 
 // 📌 SIGN IN
+// 📌 SIGN IN
 app.post("/api/users/signin", async (req, res) => {
   try {
     const { email, password } = req.body;
-    console.log("📥 Sign In request:", req.body);
-
-    // userni topish
     const user = await User.findOne({ email });
-    if (!user) {
-      console.log("❌ User topilmadi:", email);
-      return res.status(401).json({ success: false, message: "User not found" });
-    }
+    if (!user) return res.status(401).json({ success: false, message: "User not found" });
 
-    // parolni tekshirish
     const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
-      console.log("❌ Noto‘g‘ri parol:", email);
-      return res.status(401).json({ success: false, message: "Invalid credentials" });
-    }
+    if (!isMatch) return res.status(401).json({ success: false, message: "Invalid credentials" });
 
-    // token yaratish
-    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "1d" });
+    // ✅ Access Token (15 min)
+    const accessToken = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "15m" });
 
-    console.log("✅ User login qildi:", user.username);
+    // ✅ Refresh Token (7 kun)
+    const refreshToken = jwt.sign({ id: user._id }, process.env.JWT_REFRESH_SECRET, { expiresIn: "7d" });
 
     res.status(200).json({
       success: true,
       message: "Login successful",
-      token,
+      accessToken,
+      refreshToken,
       user: { id: user._id, username: user.username, email: user.email }
     });
+
   } catch (err) {
-    console.error("❌ Sign In xato:", err);
     res.status(500).json({ success: false, error: err.message });
   }
 });
+ 
 
 // ==========================================================
 
