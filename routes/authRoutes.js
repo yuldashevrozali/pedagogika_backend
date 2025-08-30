@@ -9,11 +9,9 @@ const router = express.Router();
 router.post("/signup", async (req, res) => {
   try {
     const { username, email, password } = req.body;
-    console.log("📥 Sign Up request keldi:", req.body);
 
     const existingUser = await User.findOne({ email });
     if (existingUser) {
-      console.log("❌ Email oldin ro‘yxatdan o‘tgan:", email);
       return res.status(400).json({ msg: "Email already registered" });
     }
 
@@ -22,46 +20,54 @@ router.post("/signup", async (req, res) => {
     const newUser = new User({ username, email, password: hashedPassword });
     await newUser.save();
 
-    console.log("✅ User ro‘yxatdan o‘tdi:", newUser.username);
     res.status(201).json({ msg: "User registered successfully" });
   } catch (err) {
-    console.error("❌ Sign Up xato:", err);
     res.status(500).json({ error: err.message });
   }
 });
 
-// 📌 SIGN IN
+// 📌 SIGN IN (2 token)
 router.post("/signin", async (req, res) => {
   try {
     const { email, password } = req.body;
-    console.log("📥 Sign In request keldi:", req.body);
 
     const user = await User.findOne({ email });
     if (!user) {
-      console.log("❌ User topilmadi:", email);
       return res.status(400).json({ msg: "User not found" });
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
-      console.log("❌ Noto‘g‘ri parol:", email);
       return res.status(400).json({ msg: "Invalid credentials" });
     }
 
-    const token = jwt.sign(
+    // ✅ Access Token (15 min)
+    const accessToken = jwt.sign(
       { id: user._id },
       process.env.JWT_SECRET,
-      { expiresIn: "1d" }
+      { expiresIn: "15m" }
     );
 
-    console.log("✅ User login qildi:", user.username);
+    // ✅ Refresh Token (7 kun)
+    const refreshToken = jwt.sign(
+      { id: user._id },
+      process.env.JWT_REFRESH_SECRET,
+      { expiresIn: "7d" }
+    );
 
     res.json({
-      token,
-      user: { id: user._id, username: user.username, email: user.email }
+      success: true,
+      message: "Login successful",
+      accessToken,
+      refreshToken,
+      user: {
+        id: user._id,
+        username: user.username,
+        email: user.email
+      }
     });
+
   } catch (err) {
-    console.error("❌ Sign In xato:", err);
     res.status(500).json({ error: err.message });
   }
 });
