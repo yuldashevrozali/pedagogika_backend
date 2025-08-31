@@ -4,14 +4,13 @@ const userSchema = new mongoose.Schema({
   username: {
     type: String,
     required: true,
-    unique: true,
     minlength: 3,
   },
-  email: {
+  phone: {
     type: String,
     required: true,
     unique: true,
-    match: /.+\@.+\..+/,
+    match: /^[0-9]{9,15}$/, // faqat raqam, 9–15 belgidan iborat
   },
   password: {
     type: String,

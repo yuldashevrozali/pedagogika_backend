@@ -8,36 +8,57 @@ const router = express.Router();
 // 📌 SIGN UP
 router.post("/signup", async (req, res) => {
   try {
-    const { username, email, password } = req.body;
+    const { username, phone, password } = req.body;
 
-    const existingUser = await User.findOne({ email });
+    const existingUser = await User.findOne({ phone });
     if (existingUser) {
-      return res.status(400).json({ msg: "Email already registered" });
+      return res.status(400).json({ success: false, msg: "Telefon oldin ro‘yxatdan o‘tgan" });
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const newUser = new User({ username, email, password: hashedPassword });
+    const newUser = new User({ username, phone, password: hashedPassword });
     await newUser.save();
 
-    res.status(201).json({ msg: "User registered successfully" });
+    // ✅ Access Token (15 min)
+    const accessToken = jwt.sign(
+      { id: newUser._id },
+      process.env.JWT_SECRET,
+      { expiresIn: "15m" }
+    );
+
+    // ✅ Refresh Token (7 kun)
+    const refreshToken = jwt.sign(
+      { id: newUser._id },
+      process.env.JWT_REFRESH_SECRET,
+      { expiresIn: "7d" }
+    );
+
+    res.status(201).json({
+      success: true,
+      msg: "User registered successfully",
+      accessToken,
+      refreshToken,
+      user: { id: newUser._id, username: newUser.username, phone: newUser.phone }
+    });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ success: false, error: err.message });
   }
 });
 
+// 📌 SIGN IN
 router.post("/signin", async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const { phone, password } = req.body;
 
-    const user = await User.findOne({ email });
+    const user = await User.findOne({ phone });
     if (!user) {
-      return res.status(400).json({ msg: "User not found" });
+      return res.status(400).json({ success: false, msg: "User not found" });
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
-      return res.status(400).json({ msg: "Invalid credentials" });
+      return res.status(400).json({ success: false, msg: "Invalid credentials" });
     }
 
     // ✅ Access Token (15 min)
@@ -62,12 +83,12 @@ router.post("/signin", async (req, res) => {
       user: {
         id: user._id,
         username: user.username,
-        email: user.email
+        phone: user.phone
       }
     });
 
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ success: false, error: err.message });
   }
 });
 

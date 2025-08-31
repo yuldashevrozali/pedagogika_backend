@@ -10,16 +10,16 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true })); // 🔑 form-data uchun ham
+app.use(express.urlencoded({ extended: true }));
 
 // ✅ User Model
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true, minlength: 3 },
-  email: { type: String, required: true, unique: true, match: /.+\@.+\..+/ },
+  phone: { type: String, required: true, unique: true, match: /^[0-9]{9,15}$/ }, // faqat raqam
   password: { type: String, required: true, minlength: 6 },
 }, { timestamps: true });
 
-const User = mongoose.model("user", userSchema);
+const User = mongoose.model("User", userSchema);
 
 // Oddiy route
 app.get("/", (req, res) => {
@@ -31,27 +31,43 @@ app.get("/", (req, res) => {
 // 📌 SIGN UP
 app.post("/api/users/signup", async (req, res) => {
   try {
-    const { username, email, password } = req.body;
+    const { username, phone, password } = req.body;
     console.log("📥 Sign Up request:", req.body);
 
     // mavjud userni tekshirish
-    const existingUser = await User.findOne({ email });
+    const existingUser = await User.findOne({ phone });
     if (existingUser) {
-      console.log("❌ Email oldin ro‘yxatdan o‘tgan:", email);
-      return res.status(400).json({ success: false, message: "Email already registered" });
+      console.log("❌ Telefon oldin ro‘yxatdan o‘tgan:", phone);
+      return res.status(400).json({ success: false, message: "Telefon raqam allaqachon ro‘yxatdan o‘tgan" });
     }
 
     // parolni hashlash
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const newUser = new User({ username, email, password: hashedPassword });
+    const newUser = new User({ username, phone, password: hashedPassword });
     await newUser.save();
 
+    // ✅ Access Token (15 min)
+    const accessToken = jwt.sign(
+      { id: newUser._id },
+      process.env.JWT_SECRET,
+      { expiresIn: "15m" }
+    );
+
+    // ✅ Refresh Token (7 kun)
+    const refreshToken = jwt.sign(
+      { id: newUser._id },
+      process.env.JWT_REFRESH_SECRET,
+      { expiresIn: "7d" }
+    );
+
     console.log("✅ User ro‘yxatdan o‘tdi:", newUser.username);
-    res.status(201).json({ 
+    res.status(201).json({
       success: true,
       message: "User registered successfully",
-      user: { id: newUser._id, username: newUser.username, email: newUser.email }
+      accessToken,
+      refreshToken,
+      user: { id: newUser._id, username: newUser.username, phone: newUser.phone }
     });
   } catch (err) {
     console.error("❌ Sign Up xato:", err);
@@ -60,11 +76,10 @@ app.post("/api/users/signup", async (req, res) => {
 });
 
 // 📌 SIGN IN
-// 📌 SIGN IN
 app.post("/api/users/signin", async (req, res) => {
   try {
-    const { email, password } = req.body;
-    const user = await User.findOne({ email });
+    const { phone, password } = req.body;
+    const user = await User.findOne({ phone });
     if (!user) return res.status(401).json({ success: false, message: "User not found" });
 
     const isMatch = await bcrypt.compare(password, user.password);
@@ -81,14 +96,14 @@ app.post("/api/users/signin", async (req, res) => {
       message: "Login successful",
       accessToken,
       refreshToken,
-      user: { id: user._id, username: user.username, email: user.email }
+      user: { id: user._id, username: user.username, phone: user.phone }
     });
 
   } catch (err) {
+    console.error("❌ Sign In xato:", err);
     res.status(500).json({ success: false, error: err.message });
   }
 });
- 
 
 // ==========================================================
 
@@ -97,10 +112,7 @@ const PORT = process.env.PORT || 5000;
 
 const startServer = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    });
+    await mongoose.connect(process.env.MONGO_URI);
     console.log("✅ MongoDB ulandi");
 
     app.listen(PORT, () => {
@@ -108,7 +120,7 @@ const startServer = async () => {
     });
   } catch (err) {
     console.error("❌ MongoDB xato:", err);
-    process.exit(1); // serverni to‘xtatish
+    process.exit(1);
   }
 };
 
