@@ -8,7 +8,12 @@ const router = express.Router();
 // 📌 SIGN UP
 router.post("/signup", async (req, res) => {
   try {
-    const { username, phone, password } = req.body;
+    const { name, phone, password } = req.body;
+
+    // Validate password: exactly 5 digits
+    if (!/^[0-9]{5}$/.test(password)) {
+      return res.status(400).json({ success: false, msg: "Parol faqat 5 ta raqamdan iborat bo‘lishi kerak" });
+    }
 
     const existingUser = await User.findOne({ phone });
     if (existingUser) {
@@ -17,7 +22,7 @@ router.post("/signup", async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const newUser = new User({ username, phone, password: hashedPassword });
+    const newUser = new User({ name, username: phone, phone, password: hashedPassword });
     await newUser.save();
 
     // ✅ Access Token (15 min)
@@ -39,7 +44,7 @@ router.post("/signup", async (req, res) => {
       msg: "User registered successfully",
       accessToken,
       refreshToken,
-      user: { id: newUser._id, username: newUser.username, phone: newUser.phone }
+      user: { id: newUser._id, name: newUser.name, username: newUser.username, phone: newUser.phone }
     });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message });
@@ -50,6 +55,11 @@ router.post("/signup", async (req, res) => {
 router.post("/signin", async (req, res) => {
   try {
     const { phone, password } = req.body;
+
+    // Validate password: exactly 5 digits
+    if (!/^[0-9]{5}$/.test(password)) {
+      return res.status(400).json({ success: false, msg: "Parol faqat 5 ta raqamdan iborat bo‘lishi kerak" });
+    }
 
     const user = await User.findOne({ phone });
     if (!user) {
@@ -82,6 +92,7 @@ router.post("/signin", async (req, res) => {
       refreshToken,
       user: {
         id: user._id,
+        name: user.name,
         username: user.username,
         phone: user.phone
       }
